@@ -8,4 +8,5 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 # 구분
 
 # Github
--Github 초기 사용법
+-Github란?
+-Github 기본 개념
