@@ -20,4 +20,5 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 # 강의요약
 - 위키주소 : [to2.kr/bB8](https://to2.kr/bB8)
 - 유튜브채널 주소 : [to2.kr/bCg](https://to2.kr/bCg)
+
 [-20.10.08. 1일차](https://github.com/cjy324/TIL_Jooyoung/blob/main/%EA%B0%95%EC%9D%98%EC%9A%94%EC%95%BD)
