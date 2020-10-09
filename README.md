@@ -27,4 +27,5 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 - 유튜브채널 주소 : [to2.kr/bCg](https://to2.kr/bCg)
 
 [-20.10.08](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.08)
+
 [-20.10.09](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.09)
