@@ -15,7 +15,7 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 
 [-Github 기본 개념 및 사용법](https://to2.kr/bDa)
 
-[-Github용 마크다운 문법 정리](https://to2.kr/bDb)
+[-Github용 마크다운 문법 정리](https://to2.kr/bDd)
 (출처:denlyou님의 github펌 https://github.com/denlyou/study_markdown_github)
 
 
