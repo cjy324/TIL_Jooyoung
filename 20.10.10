@@ -1,8 +1,8 @@
 
 
 
-[일단 저장](https://studio.code.org/s/course4/stage/9/puzzle/9)
-
+[4-9단계 9번 문제](https://studio.code.org/s/course4/stage/9/puzzle/9)
+```
 var counter;
 
 for (counter = 3; counter <= 15; counter += 3) {
@@ -15,3 +15,20 @@ for (counter = 3; counter <= 15; counter += 3) {
       getNectar();
   }
 }
+```
+
+[4-9단계 11번 문제](https://studio.code.org/s/course4/stage/9/puzzle/11)
+```
+var counter;
+
+for (counter = 14; counter >= 2; counter -= 4) {
+  turnRight();
+  var repeat_end = counter / 2;
+  for (var count = 0; count < repeat_end; count++) {
+      moveForward();
+  }
+  for (var count2 = 0; count2 < counter; count2++) {
+      getNectar();
+  }
+}
+```
