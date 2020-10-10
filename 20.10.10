@@ -1,0 +1,17 @@
+
+
+
+[일단 저장](https://studio.code.org/s/course4/stage/9/puzzle/9)
+
+var counter;
+
+for (counter = 3; counter <= 15; counter += 3) {
+  turnLeft();
+  var repeat_end = counter / 3;
+  for (var count = 0; count < repeat_end; count++) {
+      moveForward();
+  }
+  for (var count2 = 0; count2 < counter; count2++) {
+      getNectar();
+  }
+}
