@@ -23,6 +23,7 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 [-[테크리포트]유튜브·넷플릭스 추천 알고리즘 원리는?](https://to2.kr/bDc)
 
 # 공부 log
+- 티스토리 주소: [TISTORY](https://cjy324.tistory.com/)
 - 위키주소 : [to2.kr/bB8](https://to2.kr/bB8)
 - 유튜브채널 주소 : [to2.kr/bCg](https://to2.kr/bCg)
 
@@ -33,3 +34,6 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 [-20.10.10](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.10)
 
 [-20.10.11](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.11)
+
+[-20.10.12](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.12)
+
