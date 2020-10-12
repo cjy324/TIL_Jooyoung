@@ -24,3 +24,30 @@
  5.Merge(병합)
   -Merge pull request 후 comfirm merge하면 병합이 완료됨
   -병합 후 필요없는 브랜치는 삭제
+
+---------20.10.12 내용 추가---------
+# Git 초기 설정
+
+프로젝트 폴더에 git log폴더를 만드는 것? : git init
+초기 git 사용자 설정: git config --global user.name "이름"
+초기 git 사용자 설정:  git config --global user.email "메일주소"
+git 저장소 연결: git remote add origin 주소
+git 저장소 연결 현황보기: git remote -v
+git 저장소 연결 초기화: git remote remove origin
+git add 파일주소: 선택한 파일만 커밋(장바구니 담기)
+모든 변경 항목 커밋(장바구니 담기): git add .
+장바구니 초기화: git reset head:장바구니 초기화
+git commt하기: git commt -m "파일명"
+저장소에 git push하기: git push origin master
+vim- vim: 편집기, 동작을 하려면 "a"
+- 나가기: esc 
+- 저장하지 않고 나가기: ":q!"
+- 저장하고 나가기: "wq!"
+
+# Github에서 데이터 가져오기
+ 1. STS 실행
+ 2. window -> perspective -> open perspective -> other -> 'Git'
+ 3. Git Repositories에서 빈공간에 우클릭 clone a git repositories
+ 4. URL에 가져올 git repositories 주소 붙여넣기
+ 5. workspace로 저장 위치 설정
+ 6. Git Repositories에서 가져온 저장소 우클릭 -> import Projects 클릭
