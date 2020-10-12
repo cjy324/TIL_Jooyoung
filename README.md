@@ -6,6 +6,8 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 - 1일1기록을 목표로 시작
 
 - 가능하면 주요 용어들은 영어로 작성
+# 티스토리
+[Dev_J의 티스토리](https://cjy324.tistory.com/)
 
 # 구분
 
@@ -23,7 +25,6 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 [-[테크리포트]유튜브·넷플릭스 추천 알고리즘 원리는?](https://to2.kr/bDc)
 
 # 공부 log
-- 티스토리 주소: [TISTORY](https://cjy324.tistory.com/)
 - 위키주소 : [to2.kr/bB8](https://to2.kr/bB8)
 - 유튜브채널 주소 : [to2.kr/bCg](https://to2.kr/bCg)
 
