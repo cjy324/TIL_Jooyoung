@@ -51,3 +51,12 @@ vim- vim: 편집기, 동작을 하려면 "a"
  4. URL에 가져올 git repositories 주소 붙여넣기
  5. workspace로 저장 위치 설정
  6. Git Repositories에서 가져온 저장소 우클릭 -> import Projects 클릭
+ 
+ ---------20.10.13 내용 추가---------
+# Github에서 변경 데이터 가져오기(최근 작업한 내용 기존 저장소에 패치)
+ 1. STS 실행
+ 2. Git Repositories 원하는 저장소 우클릭 Fetch From Origin
+ 3. configue -> save and fetch
+ 4. 생성된 브런치 확인
+ 5. 브런치 우클릭 Merge
+ 
