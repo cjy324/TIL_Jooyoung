@@ -5,6 +5,8 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 
 - 1일1기록을 목표로 시작
 
+- 진한 잔디밭 만들기도 좋지만 풍성한 잔디밭을 만드는 것이 더욱 중요(feat. 꾸준함)
+
 - 가능하면 주요 용어들은 영어로 작성
 # 티스토리
 [Dev_J의 티스토리](https://cjy324.tistory.com/)
