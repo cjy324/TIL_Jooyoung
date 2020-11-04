@@ -30,53 +30,7 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 - 위키주소 : [to2.kr/bB8](https://to2.kr/bB8)
 - 유튜브채널 주소 : [to2.kr/bCg](https://to2.kr/bCg)
 
-[-20.10.08](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.08)
-
-[-20.10.09](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.09)
-
-[-20.10.10](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.10)
-
-[-20.10.11](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.11)
-
-[-20.10.12](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.12)
-
-[-20.10.13](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.13)
-
-[-20.10.14](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.14)
-
-[-20.10.15](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.15)
-
-[-20.10.16](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.16)
-
-[-20.10.17](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.17)
-
-[-20.10.18](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.18)
-
-[-20.10.19](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.19)
-
-[-20.10.20](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.20)
-
-[-20.10.21](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.21)
-
-[-20.10.22](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.22)
-
-[-20.10.23](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.23)
-
-[-20.10.24](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.24)
-
-[-20.10.25](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.25)
-
-[-20.10.26](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.26)
-
-[-20.10.27](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.27)
-
-[-20.10.28](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.28)
-
-[-20.10.29](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.29)
-
-[-20.10.30](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.30)
-
-[-20.10.31](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.10.31)
+[-20년10월 모음](https://github.com/cjy324/TIL_Jooyoung/wiki/%EA%B3%B5%EB%B6%80log(20%EB%85%84-10%EC%9B%94))
 
 [-20.11.01](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.11.01)
 
