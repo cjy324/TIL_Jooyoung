@@ -39,3 +39,5 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 [-20.11.03](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.11.03)
 
 [-20.11.04](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.11.04)
+
+[-20.11.05](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.11.05)
