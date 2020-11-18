@@ -1,2 +1,2 @@
 -20.11.18 MysqlUtil 활용 게시판 재구축(댓글 추가,리스팅,수정,삭제)(feat.INNER JOIN)
--MySql 연습
+-MySql 연습: JOIN(feat. INNER, LEFT, RIGHT, OUTER)
