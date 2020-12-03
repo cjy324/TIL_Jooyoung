@@ -1,1 +1,39 @@
 -20.12.03 HTML&CSS 반응형 레이아웃 연습
+
+-내용 정리 필요
+
+table
+tr(묶음),th(소제목),td(내용)
+
+transition: 지연시간(추가 정리 필요)
+
+::after::before 해당 태그의 앞,뒤쪽에 내용추가할때 사용
+
+폰트사이트 : 눈누
+
+HTML 시작시
+con-min-width은 항상 디폴트로 만들것
+body의 자식은 이제부터 무조건 section
+
+:root 변수 설정 가능, 단, 꼭 필요한 경우가 아닌경우 쓰지 않는 것이 좋음
+
+child 개념 공부 필요
+float 개념 공부 필요
+
+inline-bloackㅇ로 
+float의 부모는 무조건 row
+  
+  /*라이브러리*/
+.con{
+ margin-left:auto;
+ margin-rtight:auto;
+}
+/*커스텀*/
+.con-min-width{
+  min-width:1200px;
+}
+.con{
+ min-width:1200px;
+}
+
+
