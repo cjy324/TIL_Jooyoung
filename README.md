@@ -121,3 +121,5 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 [-20.12.14](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.12.14)
 
 [-20.12.15](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.12.15)
+
+[-20.12.16](https://github.com/cjy324/TIL_Jooyoung/blob/main/20.12.16)
