@@ -14,21 +14,6 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 # 티스토리
 [Dev_J의 티스토리](https://cjy324.tistory.com/)
 
-# 구분
-
-# Github
-
-[-Github란?](https://to2.kr/bC9)
-
-[-Github 기본 개념 및 사용법](https://to2.kr/bDa)
-
-[-Github용 마크다운 문법 정리](https://to2.kr/bDd)
-(출처:denlyou님의 github펌 https://github.com/denlyou/study_markdown_github)
-
-
-# 잡다한 IT상식 모음
-[-[테크리포트]유튜브·넷플릭스 추천 알고리즘 원리는?](https://to2.kr/bDc)
-
 # 공부 log
 - 위키주소 : [to2.kr/bB8](https://to2.kr/bB8)
 - 유튜브채널 주소 : [to2.kr/bCg](https://to2.kr/bCg)
@@ -137,3 +122,5 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 [-21.02.20](https://github.com/cjy324/TIL_Jooyoung/blob/main/21.02.20)
 
 [-21.02.21](https://github.com/cjy324/TIL_Jooyoung/blob/main/21.02.21)
+
+[-21.02.22](https://github.com/cjy324/TIL_Jooyoung/blob/main/21.02.22)
