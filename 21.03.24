@@ -1,0 +1,2 @@
+- 21.03.24 lamplight서비스 프로젝트(starRating테이블명 -> rating으로 변경, 평점 추가, 출력 구현, 리뷰 삭제 기능 구현)
+- 21.03.24 lamplight서비스 프로젝트(평점 추가, 출력 구현, 리뷰 삭제 기능 구현, directorProfilePage 추가, orderListPage에서 진행단계별 필터링 기능 구현)
