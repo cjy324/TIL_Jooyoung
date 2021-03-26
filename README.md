@@ -14,6 +14,9 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 # 티스토리
 [Dev_J의 티스토리](https://cjy324.tistory.com/)
 
+# 포트폴리오
+[GetIT 사이트](https://getit.devj.me/)
+
 # 공부 log
 - 위키주소 : [to2.kr/bB8](https://to2.kr/bB8)
 - 유튜브채널 주소 : [to2.kr/bCg](https://to2.kr/bCg)
