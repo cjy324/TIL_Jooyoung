@@ -8,14 +8,13 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 - 진한 잔디밭 만들기도 좋지만 풍성한 잔디밭을 만드는 것이 더욱 중요(feat. 꾸준함)
 
 - 가능하면 주요 용어들은 영어로 작성
-# 블로그
-[Dev_J Blog](https://blog.devj.me/)
+
+# 포트폴리오
+[Blog](https://blog.devj.me/)
+[GetIT 사이트](https://getit.devj.me/)
 
 # 티스토리
 [Dev_J의 티스토리](https://cjy324.tistory.com/)
-
-# 포트폴리오
-[GetIT 사이트](https://getit.devj.me/)
 
 # 공부 log
 - 위키주소 : [to2.kr/bB8](https://to2.kr/bB8)
