@@ -11,8 +11,10 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 
 # 포트폴리오
 [Blog](https://blog.devj.me/)
+[Blog 기술문서](https://www.notion.so/BLOG-7cf509b2d23045ab8f4a719120fb8383)
 
 [GetIT 사이트](https://getit.devj.me/)
+[GetIT 사이트 기술문서](https://www.notion.so/GetIT-235b60564d13425bb75997e56bf82321)
 
 # 티스토리
 [Dev_J의 티스토리](https://cjy324.tistory.com/)
