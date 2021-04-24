@@ -18,7 +18,7 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 <br>
 [GetIT 사이트 기술문서](https://www.notion.so/GetIT-235b60564d13425bb75997e56bf82321)
 
-[상장례 PWA](https://sangjanrye.web.app/)
+[상장례 PWA](https://sangjangrye.web.app/)
 
 # 티스토리
 [Dev_J의 티스토리](https://cjy324.tistory.com/)
