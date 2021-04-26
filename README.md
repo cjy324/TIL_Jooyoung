@@ -9,6 +9,9 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 
 - 가능하면 주요 용어들은 영어로 작성
 
+# 이력서
+[이력서](https://www.notion.so/97097c42327b452ab8ba6ec2d81f2a5b)
+
 # 포트폴리오
 [Blog](https://blog.devj.me/)
 <br>
@@ -19,6 +22,8 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 [GetIT 사이트 기술문서](https://www.notion.so/GetIT-235b60564d13425bb75997e56bf82321)
 
 [상장례 PWA](https://sangjangrye.web.app/)
+<br>
+[상장례 APP 기술문서](https://www.notion.so/APP-c35903290b534c9794b97370d6347912)
 
 # 티스토리
 [Dev_J의 티스토리](https://cjy324.tistory.com/)
