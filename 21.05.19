@@ -1,0 +1,307 @@
+-CS 공부
+
+# 34. Typescript
+
+---
+
+- **자바스크립트 언어에 타입을 부여한 언어**
+- **타입에 엄격한 자바스크립트**
+- 자바스크립트의 확장된 언어라고 볼 수 있다.
+- **마이크로소프트**에 의해 개발된 오픈소스 프로그래밍 언어
+- 타입스크립트의 가장 큰 장점은 **'정적 타입'을 지정해야만 컴파일이 가능하다는 점**입니다.
+- 기존의 자바스크립트는 동적타이핑을 지원하기 때문에 프로그래밍시 특정하게 타입을 지정하지 않더라도 컴파일 과정에서 동적으로 타입이 지정되는 방식이었습니다. 이 방식의 단점은 아무래도 동적으로 타입이 지정되는 과정에서 개발자가 예측하지 못하는 에러가 발생할 수 있다는 점입니다.
+- 이를 보완한 것이 아예 처음부터 타입을 지정해 놓는 정적 타이핑을 지원하는 타입스크립트라고 생각
+- 명시적인 정적 타입 지정은 **개발자의 의도를 명확**하게 코드로 기술할 수 있고 이는 **코드의 가독성을 높이고** 예측할 수 있게 하며 **디버깅을 쉽게** 합니다.
+- TypeScript를 이용하면서 관련된 에러는 적어지고 대규모의 리펙토링을 하거나 새로운 담당자가 코드를 마주해도 개발과 유지보수를 용이하게 할 수 있다면 이 장점만으로도 TypeScript를 사용하기에 충분 한 이유 같습니다.
+- [https://velog.io/@taeg92/TypeScript-시작하기](https://velog.io/@taeg92/TypeScript-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
+
+# 35. Typescript 기초(예시)
+
+---
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/599277d8-277e-4781-a270-cff847f97f4e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/599277d8-277e-4781-a270-cff847f97f4e/Untitled.png)
+
+# 36. Typescript 기초(기본 타입)
+
+---
+
+[https://ahnheejong.gitbook.io/ts-for-jsdev/03-basic-grammar/primitive-types](https://ahnheejong.gitbook.io/ts-for-jsdev/03-basic-grammar/primitive-types)
+
+### **불리언(boolean)**
+
+자바스크립트의 `boolean`에 대응하는, 참 또는 거짓을 나타내는 타입이다.
+
+```tsx
+const isTypeScriptAwesome: boolean = true;
+const doesJavaScriptHasTypes: boolean = false;
+```
+
+### **숫자(number)**
+
+숫자를 나타내는 타입이다. 자바스크립트에서는 정수, 부동 소수점 등의 구분이 따로 없고 모든 수가 [IEEE754](https://ko.wikipedia.org/wiki/IEEE_754) 표준을 따르는 부동소수점이고, 타입스크립트의 `number` 타입도 마찬가지다.
+
+```tsx
+const yourScore: number = 100;
+const ieee754IsAwesome: number = 0.1 + 0.2; // 0.30000000000000004
+```
+
+### **문자열(string)**
+
+문자열을 나타내는 타입이다. ES6 템플릿 리터럴 역시 `string` 타입의 값이다.
+
+```tsx
+const authorName: string = '안희종';
+const toReaders: string = `책을 읽어주셔서 감사합니다. 도움이 되었으면 좋겠습니다.`;
+```
+
+### **null / undefined**
+
+`null` 타입과 `undefined` 타입은 각각 `null`과 `undefined`라는 하나의 값만을 갖는다. 이 두 값을 자기 자신의 타입, 그리고 아래에서 언급될 `void` 타입 이외의 타입에 할당하려 하면 타입 에러(`TS2322: Type 'null' is not assignable to type 'number'` 등)가 발생한다.
+
+```tsx
+const nullValue: null = null;
+const undefinedValue: undefined = undefined;
+const numberValue: number = null; // TS2322: Type 'null' is not assignable to type 'number'
+```
+
+타입스크립트에서, 원래 `null`과 `undefined`는 기본적으로 모든 타입의 서브타입이다. 즉 아무런 설정이 없다면 아래와 같은 식의 할당이 허용된다.
+
+```tsx
+const a: number = null; // okay
+```
+
+하지만 이런 동작은 버그를 양산하기 쉽다. 때문에 타입스크립트 2.0에 `null`과 `undefined` 값을 다른 타입에 할당하는 것을 막는 `--strictNullChecks` 플래그가 [추가되었다](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#--strictnullchecks).
+
+앞서 언급했듯 이 책의 모든 코드 예제는 `--strict`플래그가 켜진 환경을 가정하고 있으며, `--strictNullChecks` 플래그는 `--strict` 플래그에 포함된다. 실 프로젝트에서도 해당 플래그를 켜는 것을 추천한다.
+
+## **특별한 타입**
+
+자바스크립트에서 직접적으로 대응되는 값은 없지만 타입스크립트가 제공하는 특수한 타입이 몇 가지 있다.
+
+### **any**
+
+`any` 타입은 모든 타입과 호환 가능하다. 즉, 모든 값의 타입을 `any` 로 지정할 수 있고, `any` 타입의 변수에는 모든 값을 할당할 수 있다.
+
+```tsx
+let bool: any = true;
+bool = 3;
+bool = 'whatever';
+bool = {};
+```
+
+또한 `any` 타입 값의 메소드를 호출할 시에도 타입 검사가 아예 수행되지 않는다. 이 때 해당 실제로 존재하지 않는다면 타입 검사는 통과하되 런타임 에러가 발생할 것이다.
+
+```tsx
+bool.nonExistingMethod();
+bool.whatever(false);
+```
+
+`any` 타입은 타입스크립트 타입 시스템의 비상 탈출구(escape hatch)이다. `any`는 타입 정의를 제공하지 않는 라이브러리, 일단 무시하고 넘어가고 이후에 정확히 적고 싶은 부분 또는 코드 작성 시점에 형태를 알 수 없는 값 등의 타입 표기에 유용하다. 하지만 `any`를 남용하면 타입 안정성에 구멍이 뚫린 코드가 되어 타입스크립트를 사용하는 의의가 사라지므로 꼭 필요한 경우에만 사용해야 한다.
+
+### **void**
+
+`void`는 `null`과 `undefined` 만을 값으로 가질 수 있는 타입이다. 아무런 값도 반환하지 않는 함수의 반환 타입을 표시할 때 사용한다.
+
+```tsx
+function nothing(): void { }
+```
+
+### **never**
+
+`never`는 아무런 값도 가질 수 없는 타입이다. 아무런 값도 가질 수 없는 타입은 과연 어떤 쓸모가 있을까? 아래 함수를 보자.
+
+```tsx
+function alwaysThrow(): ??? {
+  throw new Error(`I'm a wicked function!`);
+}
+```
+
+의미상으로 `never` 타입은 – 그 이름이 암시하듯 – 절대 존재할 수 없는 값을 암시한다. 따라서 `never` 타입의 변수에는 `null`, `undefined`를 포함해 어떤 값도 할당할 수 없다. 위의 `alwaysThrow` 함수는 항상 에러를 `throw` 하므로 어떤 값도 반환하지 않는다. 이 때, 이런 함수의 반환 타입을 `never` 타입을 사용해 나타낼 수 있다.
+
+```tsx
+function alwaysThrow(): never {
+  throw new Error(`I'm a wicked function!`);
+}
+```
+
+## **배열과 튜플**
+
+순서가 있는 원소의 모음(collection)을 나타내는 가장 간단하면서도 유용한 자료구조인 배열, 그리고 그 사촌 튜플을 나타내는 타입에 대해 다룬다.
+
+### **배열**
+
+배열 타입은 자바스크립트 `Array` 값의 타입을 나타내는데 쓰인다. 원소 타입 뒤에 대괄호(`[]`)를 붙여 표현한다.
+
+```tsx
+const pibonacci: number[] = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55];
+const myFavoriteBeers: string[] = ['Imperial Stout', 'India Pale Ale', 'Weizenbock'];
+```
+
+배열 타입을 표현하는 또다른 방식이 있다.
+
+```tsx
+const pibonacci: Array<number> = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55];
+const myFavoriteBeers: Array<string> = ['Imperial Stout', 'India Pale Ale', 'Weizenbock'];
+```
+
+이 문법의 의미는 3.6절에서 **제너릭**을 소개하며 좀 더 자세히 살펴본다.
+
+### **튜플**
+
+튜플 타입을 이용해 원소의 수와 각 원소의 타입이 정확히 지정된 배열의 타입을 정의할 수 있다.
+
+```tsx
+const nameAndHeight: [string, number] = ['안희종', 176]
+```
+
+**튜플 타입 변수는 정확히 명시된 개수 만큼의 원소만을 가질 수 있다**. 만약 타입 정의보다 더 많은, 혹은 더 적은 원소를 갖는 배열을 할당한다면 에러를 낸다.
+
+```tsx
+const invalidNameAndHeight: [string, number] = ['안희종', 176, 42];
+// error TS2322: Type '[string, number, boolean]' is not assignable to type '[string, number]'.
+//   Types of property 'length' are incompatible.
+//     Type '3' is not assignable to type '2'.
+```
+
+다만 튜플 타입의 값을 `Array` 프로토타입의 메소드를 통해 조작하는 것은 금지되지 않는다는 점에 유의해야 한다. 예를 들어 아래와 같은 코드는 에러를 내지 않는다.
+
+```tsx
+const validNameAndHeight: [string, number] = ['안희종', 176];
+validNameAndHeight.push(42); // no error
+```
+
+# 37. Vue.js란?
+
+---
+
+[https://mkil.tistory.com/515](https://mkil.tistory.com/515)
+
+- **웹 페이지 화면단을 개발하기 위한 프론트엔드 프레임워크**
+- 이러한 프레임워크에는 대표적으로 React와 Angular라는 전통적인 프레임워크가 존재하지만 아무래도 초보들이 접근하기에는 vue가 더 간편하다는 장점이 있다,
+- vue는 **react의 장점인 Virtual DOM**과 **angular의 장점인 양뱡향 바인딩**이라는 양측의 장점을 흡수한 프레임워크라는 특징이 있다.
+- vue는 기본적으로  **컴포넌트기반 프레임워크**이다. 컴포넌트기반 프레임워크란 **DOM을 작은 단위로 쪼개서 개발하는 방식**인데, 이러한 방식은 **디버깅 그리고 재사용성적인 측면에서 유리한 방식**이다.
+
+# 38. Vue.js 특징
+
+---
+
+- **빠른 렌더링, 적은 용량**
+- 초보들이 접근하기에는 vue가 더 간편하다는 장점이 있다,
+- vue는 **react의 장점인 Virtual DOM**과 **angular의 장점인 양뱡향 바인딩**이라는 양측의 장점을 흡수한 프레임워크라는 특징이 있다.
+- .vue 파일에 HTML과 CSS 그리고 Script까지 하나로 묶어서 **컴포넌트 단위로 직관적인 구성이 가능**하다는 것
+
+# 39. 양방향바인딩이란?
+
+---
+
+- 화면에 표시되는 값과 데이터 값이 동기화되서 **어느 한쪽이 변경되면 다른 한쪽도 자동으로 변경되는 것**
+
+# 40. 단방향바인딩이란?
+
+---
+
+- 상위컴포넌트에서 하위컴포넌트로 **일방적으로 데이터가 전달되는 방식**
+
+# 41. Vue의 LifeCycle
+
+---
+
+- 크게 4단계
+1. **인스턴스의 생성(Created)** : 아직 부착전이라 DOM요소로 접근은 불가능, 서버로 부터 데이터를 요청해 받아오는 로직을 수행
+2. **생성된 인스턴스를 화면에 부착(Mounted)** : DOM요소로 접근이 가능해서 화면 요소를 제어할 수 있음
+3. **마운트된 인스턴스의 내용이 갱신(Updated)** : 화면 내 데이터 변경시 가상돔으로 화면을 다시 그림
+4. **인스턴스가 최종적으로 소멸(Destroyed)**
+
+# 42. Vue의 구성요소
+
+---
+
+- 크게 4가지
+1. **Instance** : 뷰로 화면을 개발할 때 필수로 생성해야 하는 단위
+2. **Component** : 화면을 구조적으로 설계하기 위한 요소
+3. **Router** : 화면 간 이동하는 방법
+4. **Template** : 화면을 구체적으로 꾸미는 요소
+
+# 43. React.js 특징?
+
+---
+
+- 큰 규모에서 더 빛을 발하고, 테스팅이 수월
+- **Web 과 Native 앱 개발에 모두 사용 가능**
+- **Virtual Dom이 특징**
+- 더 큰 개발자 생태계에서 오는 많은 레퍼런스와 도구들
+
+# 44. Angular.js 특징?
+
+---
+
+- **개발에 필요한 모든 도구들을 모아놓은 all in one 프레임워크**
+- **양방향 데이터 바인딩**
+- **TypeScript기반 프레임워크**
+- 가벼운 프로젝트보단 **규모가 큰 프로젝트**에 사용하기 적합
+
+# 45. MVC 패턴이란?
+
+---
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ef9b53d5-49b2-4397-9497-ea1918f245ff/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ef9b53d5-49b2-4397-9497-ea1918f245ff/Untitled.png)
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5c4f9188-048f-4148-8701-c414f846c6b2/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5c4f9188-048f-4148-8701-c414f846c6b2/Untitled.png)
+
+- **Model, View, Controller**의 약자
+- 하나의 **앱을 구성하는 구성요소를 세가지 역할로 구분**한 패턴
+- **사용자가  Controller를 조작하면 Model을 통해 데이터가 전송되고 그 정보를 바탕으로 View가 시각적인 요소를 표현하는 구조**
+- 즉, **사용자 → 컨트롤러 → 모델 → 컨트롤러 → 뷰 → 사용자**
+
+# 46. MVVM란?
+
+---
+
+- **모델-뷰-뷰-모델**로 이루어진 패턴
+
+# 47. Vue3 - Composition API란?
+
+---
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e26f0ef5-4186-4467-ac85-23e0f79e89ca/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e26f0ef5-4186-4467-ac85-23e0f79e89ca/Untitled.png)
+
+- Vue3의 가장 큰 변화점은 **Composition API**의 도입이다.
+- Composition API 사용하는 이유는 크게 **기능별 구분**, **코드 재활용성 증가, 가독성의 증가**이다.
+- 기존의 **vue2 버전에서는 data, methods, computed와 같이 각각의 로직들이 따로 흩어져 있어서** 어떠한 로직에서 어떠한 데이터를 이용하는지 **확인하는데 어려움이 있었다.**
+- Composition API의 도입으로 **Setup()을 통해 이러한 로직들을 하나의 공간에 담을 수 있어서** 가독성이 좋아지고 코드의 재활용적인 측면에도 유리해졌다.
+
+```bash
+Composition API의 가장 큰 특징 중 하나는 Setup이다. 기존 Vue2의 Life Cycle과 비교하자면,
+
+**beforeCreate -> setup()
+created -> setup()
+beforeMount -> onBeforeMount
+mounted -> onMounted
+beforeUpdate -> onBeforeUpdate
+updated -> onUpdated
+beforeDestroy -> onBeforeUnmount
+destroyed -> onUnmounted
+activated -> onActivated
+deactivated -> onDeactivated
+errorCaptured -> onErrorCaptured**
+
+위와 같이 beforeCreate나 created는 모두 setup() 안으로 들어가고, 나머지 life cycle은 onXXX function들로 적용할 수 있다.
+
+즉, setup()이라는 일종의 훅에서 초기화를 진행한다.
+setup에서 반응형 데이터를 바인딩해주고, 기존에는 computed에 따로 명시되어 있던 computed 속성들을 정의해줄 수 있다.
+```
+
+# 48. Async, Await와 Promise의 차이(정리 필요)
+
+---
+
+- 
+
+# 49. Axios
+
+---
+
+- HTTP통신 라이브러리
+- 브라우저, Node.js를 위한 **Promise API를 활용하는 HTTP 비동기 통신 라이브러리**
+- **Ajax로 Javascript를 사용한 비동기 통신**이며, **클라이언트와 서버간의 XML 데이터를 주고 받는 기술**
+- **return 값이 Promise 객체 형태**
