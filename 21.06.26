@@ -1,0 +1,71 @@
+- Editor 프로젝트 관련 JS API 공부
+
+# document.write( )
+
+---
+
+- ()안에 것을 화면에 출력하라는 메서드
+
+```jsx
+document.write('내용 입력');
+```
+
+# document.open(), document.close()
+
+---
+
+- 이 메소드는 새로운 문서의 작성을 시작하고 종료시키는 메소드이다.
+- document.write() 와 함게 사용되면 document.open() 메소드는 생략해도 무방하지만, 작성을 종료할 때 document.close()는 반드시 써 주어야 한다.
+
+[https://unabated.tistory.com/entry/documentopen-documentclose-메소드](https://unabated.tistory.com/entry/documentopen-documentclose-%EB%A9%94%EC%86%8C%EB%93%9C)
+
+# document.write( ), document.open(), document.close() 사용성 비교
+
+---
+
+- 자바스크립트 함수중 document.write 가 있다.
+- 페이지를 로딩 할 때 동적 스크립트 출력을 위한 함수이며 페이지가 닫히면 더 이상 작동 하지 않는 특성을 지닌다.
+- window.open 과 혼동해서는 안된다.
+- window 개체의 open 은 새 링크를 열때 사용하고 document.open 은 현재 문서를 쓰기위해 여는 것
+- 아래 자바스크립트 함수를 임의 페이지에서 테스트 해보면 문서가 완전히 대체 되는 걸 알 수 있다.
+- 이런 경우 디버깅이 난해해짐으로 완전한 문서를 기록 해줘야 된다.
+
+```jsx
+document.open();
+
+document.write("<!doctype html><html><head><title>새 문서</title><script></script>< /head><body></body></html>");
+
+document.close();
+```
+
+[https://xtales.tistory.com/entry/html5-document-개체의-open-write-close-함수](https://xtales.tistory.com/entry/html5-document-%EA%B0%9C%EC%B2%B4%EC%9D%98-open-write-close-%ED%95%A8%EC%88%98)
+
+# window.open("url", '이름', 옵션);
+
+---
+
+**팝업옵션**
+
+- **scrollbars = yes / no - 스크롤바**
+- **resizeable = yes / no - 사이즈 변경**
+- **width = 00px; - 넒이**
+- **hegiht = 00px; - 높이**
+- **left= 00px; - 좌에서 몇 픽셀떨어뜨릴것인지**
+- **top = 00px; - 상단에서 몇픽셀 떨어뜨릴것인지**
+- **menubar= yes / no -메뉴바**
+- **toolbar = yes / no - 도구창**
+- **location= yes / no - 메뉴아이콘**
+- **fullscreen = yes/ no - 전체화면**
+- **status = yes / no - 하단상태바**
+- **directories = yes / no - 제목표시줄**
+
+```jsx
+window.open('경로', '팝업 이름', '옵션');
+
+EX)
+// 옵션 설정
+const options = 'top=100, left=100, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no';
+
+// 팝업 창 실행
+window.open("about:blank", 'preview', options);
+```
