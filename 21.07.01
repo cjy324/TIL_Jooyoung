@@ -1,0 +1,90 @@
+- Editor: 서식 적용 후에도 편집영역에 커서 유지되도록 개선
+- JS기초다지기
+
+
+# element.innerText
+
+---
+
+- 이 속성은 element 안의 text 값들만을 가져올 때 사용
+
+```jsx
+function setInnerText()  {
+  const element = document.getElementById('content');
+  element.innerText = "<div style='color:red'>A</div>";
+}
+
+//결과값
+<div style='color:red'>A</div>
+html코드가 문자열 그대로 element안에 포함
+```
+
+[https://hianna.tistory.com/483?category=764998](https://hianna.tistory.com/483?category=764998)
+
+# element.innerHTML
+
+---
+
+- HTML요소에 접근해 해당 HTML을 변경할 때 사용
+- innerText와 달리 element 안의 HTML이나 XML 값을 가져올 때 사용
+
+```jsx
+<p id="name">홍길동</p>
+<script>
+    document.getElementById('name').innerHTML="이순신"
+</script>
+
+//결과값 
+
+이순신
+
+//또 다른 사용 예시
+function setInnerHTML()  {
+  const element = document.getElementById('content');
+  element.innerHTML = "<div style='color:red'>A</div>";
+}
+
+//결과값
+A
+
+위와 같이 element.innerHTML 속성에 html코드를 입력하면,
+html element가 element안에 포함
+입력된 html태그가 해석되어 빨간색A 가 나타나는 것을 확인 할 수 있음
+```
+
+# element.textContent
+
+---
+
+- textContent는 'Node'의 속성으로,
+- innetText와는 달리 <script>나 <style> 태그와 상관없이 해상 노드가 가지고 있는 텍스트 값을 그대로 읽는다.
+
+# innerText VS innerHTML VS textContent
+
+---
+
+```jsx
+//입력값
+<div id='my_div'>
+  안녕하세요?     만나서 반가워요.
+  <span style='display:none'>숨겨진 텍스트</span>
+</div>
+
+//innerText 예시(연속된 공백은 무시)
+	
+	안녕하세요? 만나서 반가워요.
+
+------------------------------------------------------------
+
+//innerHTML 예시(div내 HTML 전체 내용을 가져옴)
+
+  안녕하세요?     만나서 반가워요.
+  <span style='display:none'>숨겨진 텍스트</span>
+
+---------------------------------------------------------------
+
+//textContent 예시(연속된 공백 포함, 'display:none' 스타일이 적용된 '숨겨진 텍스트' 문자열도 그대로 출력)
+	
+	안녕하세요?     만나서 반가워요.
+  숨겨진 텍스트
+```
