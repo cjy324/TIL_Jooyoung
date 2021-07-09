@@ -1,0 +1,91 @@
+- Uploader: form으로 업로드 기능, drag & drop 기능 구현, form없이 ajax 통신으로 파일업로드 구현 고민중..
+- JS 기초다지기
+
+
+# e.preventDefault()와 e.stopPropagation()
+
+---
+
+[https://pa-pico.tistory.com/20](https://pa-pico.tistory.com/20)
+
+- e.preventDefault는 **고유 동작을 중단**시키고,
+- e.stopPropagation는 **상위 엘리먼트들로의 이벤트 전파를 중단**시킨다.
+
+## e.preventDefault()
+
+- html 에서 a 태그나 submit 태그는 고유의 동작이 있다.
+- 페이지를 이동시킨다거나 form 안에 있는 input 등을 전송한다던가 그러한 동작이 있는데
+- e.preventDefault 는 그 동작을 중단시킨다.
+
+```jsx
+<a href="https://pa-pico.tistory.com">PAPICO 블로그로</a>
+
+<script>
+$("a").click(function(e){
+	e.preventDefault();
+	alert("e.preventDefault()");
+});
+</script>
+
+//a 태그의 href 속성이 중단되고 e.preventDefault() 알림창이 뜸
+```
+
+## e.stopPropagation()
+
+- e.stopPropagation는 이벤트가 상위 엘리먼트에 전달되지 않게 막아 준다.
+
+```jsx
+<div class="first-cover">
+  <ul class="second-cover">
+    <li class="third-cover">
+      <div class="last-el">event</div>
+    </li>
+  </ul>
+</div>
+
+<script>
+$(".last-el").click(function(e){
+	e.stopPropagation();
+	alert("last-el");
+});
+$(".third-cover").click(function(){
+	alert("third-cover");
+});
+$(".second-cover").click(function(){
+	alert("second-cover");
+});
+$(".first-cover").click(function(){
+	alert("first-cover");
+});
+</script>
+
+// 두번째 줄에 e.stopPropagation(); 를 추가시킨 것 만으로 이벤트를 중단시킬 수 있다.
+```
+
+# classList( .add/ .remove / .contains / .toggle)
+
+---
+
+[https://velog.io/@rimu/자바스크립트-classList.add-remove-contains-toggle](https://velog.io/@rimu/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-classList.add-remove-contains-toggle)
+
+- classList를 이용하면 클래스를 조작하는 다양한 메서드들을 쓸 수 있다.
+
+```
+classList.add
+: 클래스를 필요에 따라 삽입한다.
+```
+
+```
+classList.remove
+: 클래스를 필요에 따라 제거한다.
+```
+
+```
+classList.contains 
+: 값이 존재하는지 체크한다. (true/false)
+```
+
+```
+classList.toggle()
+: 클래스값이 있는지 체크하고 없으면 더하고 있으면 제거한다.
+```
