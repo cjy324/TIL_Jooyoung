@@ -1,0 +1,44 @@
+- 개념 공부
+
+
+# 재귀함수
+
+---
+
+- 재귀 함수란 어떤 함수에서 자신을 다시 호출하여 작업을 수행하는 방식의 함수를 의미한다.
+- 다른 말로는 재귀 호출, 되부름이라고 부르기도 하며, 반복문을 사용하는 코드는 항상 재귀 함수를 통해 구현하는 것이 가능하며 그 반대도 가능하다.
+- 재귀 함수를 작성할 때는 함수 내에서 다시 자신을 호출한 후 그 함수가 끝날 때까지 함수 호출 이후의 명령문이 수행되지 않는다는 사실과 종료 조건이 꼭 포함되어야 한다는 부분을 인지하고 작성하면 무한 루프를 방지할 수 있다.
+
+[https://lygggg.github.io/blog/recursive/](https://lygggg.github.io/blog/recursive/)
+
+[https://jokerkwu.tistory.com/90](https://jokerkwu.tistory.com/90)
+
+# 콜백함수
+
+---
+
+- [https://m.blog.naver.com/jhlee7732/221955322844](https://m.blog.naver.com/jhlee7732/221955322844)
+
+# else if()문과 else문의 차이
+
+---
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ff8441f-c3e3-461c-a2e7-4184cb2d79f5/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ff8441f-c3e3-461c-a2e7-4184cb2d79f5/Untitled.png)
+
+### if(){} else if{}
+
+- 이전 if가 참이면 끝
+- 만약, 이전 if가 거짓이 되면 다음 else if가 실행된다.
+- 이전 if가 틀렸으면 '그럼 이 조건은 어떤지' 물어보는 개념
+- 즉, 순서가 있다!
+
+### if(){} else{}
+
+- 이전의 모든 if조건이 거짓일 때 실행
+
+# MIME 타입
+
+---
+
+- [https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types](https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
+- [https://juyoung-1008.tistory.com/4](https://juyoung-1008.tistory.com/4)
