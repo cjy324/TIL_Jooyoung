@@ -284,3 +284,5 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 [-21.07.31](https://github.com/cjy324/TIL_Jooyoung/blob/main/21.07.31)
 
 [-21.08.01](https://github.com/cjy324/TIL_Jooyoung/blob/main/21.08.01)
+
+[-21.08.02](https://github.com/cjy324/TIL_Jooyoung/blob/main/21.08.02)
