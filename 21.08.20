@@ -1,0 +1,1 @@
+- 게시판 프로젝트: 글작성페이지에서 환경설정값 적용로직 구현, G_EditorConfig, G_UploaderConfig 도입 후 로직 개편, GENSET 변수 도입 후 작성페이지 에디터별 분기 적용
