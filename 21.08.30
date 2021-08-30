@@ -1,0 +1,1 @@
+- 게시판 프로젝트: 디버깅 모드(isDevMode) 도입 및 LOG 구현, 디버깅 모드(isDevMode) 시 이벤트별 GUID가 기록될 수 있도록 수정
