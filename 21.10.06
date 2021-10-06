@@ -1,0 +1,2 @@
+- PlayRang: 실시간 랑팟 적립 페이지 구현, GetRangPotForJson() 적용, Batch_Date 상황별 기준시간 표현 로직 구현, 페이지에서 UnidentifiedBonusPoint 값 직접 요청해서 가져오는 방식으로 로직 수정
+- 정처기 실기 준비 D-10
