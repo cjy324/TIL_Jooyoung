@@ -1,0 +1,2 @@
+- PlayRang: HomeViewModel에서 랑팟 추첨 일자에 따른 GetRangPotForJson 호출 여부 작업, GetAwaiter().GetResult() -> await...ConfigureAwait(false)로 로직 수정 작업
+- 정처기 실기 준비 D-8
