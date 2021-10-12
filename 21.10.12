@@ -1,0 +1,2 @@
+- PalyRang: GetAwaiter().GetResult() -> await...ConfigureAwait(false)로 로직 수정 작업, ReceiveRangStep1ViewModel, ActivityStatusViewModel
+- 정처기 실기 준비 D-4
