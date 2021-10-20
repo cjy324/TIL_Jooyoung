@@ -1,0 +1,1 @@
+- PlayRang: ContactListViewModel 페이지 친구 선택시 먼저 배경칠해지고 이후에 비교 후 다시 배경 삭제되는 방식으로 변경 작업
