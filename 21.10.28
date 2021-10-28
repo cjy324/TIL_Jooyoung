@@ -1,0 +1,1 @@
+- PlayRang: 랑맨 점검시간을 리스트 형태로 받아와 유동적으로 처리할 수 있도록 SplashViewModel 로직 구현
