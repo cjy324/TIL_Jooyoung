@@ -1,0 +1,3 @@
+- PlayRang: - SplashViewModel, RangManCheckTimer 로직 개선 및 테스트
+     - 더보기 > 활동레벨 들어갈 때 그래프 밑 텍스트 겹쳐보이는 현상 개선
+     - 홈탭 > 오늘 랑 전달 개수 / 랑고 api, GetHomeNewFlag(랑픽/랑수다 new flag) api 통합 작업
