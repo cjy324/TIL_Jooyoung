@@ -1,0 +1,3 @@
+- PlayRang: 
+     - 랑팟 아이템 타이틀 > 서버에서 받아오는 것으로 수정[완료]
+     - 랑맨 점검시간을 리스트 형태로 받아와 유동적으로 처리할 수 있도록 T_APPM_VS_MANAGE.sql 테이블 및 SP_APPM_GetRangManNoticInfo.sql 프로시저 수정[완료]
