@@ -1,0 +1,64 @@
+- K-UPLOAD 모바일: svn으로 raonsolution소스 이클립스에 구성, 파일 업로드 로직 디버깅 및 학습
+
+
+
+-------------------------------------------------------------------------------
+
+# extends, implements, abstract
+
+---
+
+[https://wooono.tistory.com/261](https://wooono.tistory.com/261)
+
+- extends: 부모에서 선언/정의를 모두하며 자식은 메소드/변수를 그대로 사용할 수 있음
+- implements(interface 구현): 부모 객체는 선언만 하며 정의(내용)은 자식에서 오버라이딩 해야 함
+- abstract: extends와 interface 혼합, extends하되 몇 개는 추상 메소드로 구현되어있음
+
+```jsx
+- extends
+부모에서 선언/정의를 모두하며, 자식은 오버라이딩 할 필요 없이 부모의 메소드/변수를 그대로 사용할 수 있다.
+"부모의 특징을 연장해서 사용한다."라고 기억하면 될 듯!
+
+- implements (interface 구현)
+부모 객체는 선언만 하며, 정의는 반드시 자식이 오버라이딩해서 사용한다.
+"부모의 특징을 도구로 사용해 새로운 특징을 만들어 사용한다."라고 기억하면 될 듯!
+
+- abstract
+extends와 interface의 혼합이다.
+extends를 사용하지만, 몇 개는 추상 메소드로 구현되어 있다.
+```
+
+
+
+
+
+
+
+
+# do~while문
+
+---
+
+- while문의 경우 조건이 만족하지 않는다면 한번도 반복하지 않을 수 있다.하지만, do while문의 경우는 **무조건 한번은 실행**되는 반복문이다.
+
+```jsx
+import java.util.Scanner;
+
+    public class DoWhileExam {
+
+        public static void main(String[] args) {
+            int value = 0;
+
+            // Scanner는 java.util 패키지에 있는 클래스로써 키보드로 부터 값을 입력받는다던지 할 때 유용하게 사용할 수 있는 클래스입니다.
+            Scanner scan = new Scanner(System.in);
+            //위 처럼 작성하시면 키보드로부터 값을 입력받을 수 있는 Scanner객체가 생성됩니다. 
+
+            do{
+                value = scan.nextInt(); // Scanner클래스를 이용하여 키보드로 부터 숫자값을 입력받습니다.
+                System.out.println("입력받은 수 : " + value);  
+            }while(value != 10);  // 입력받은 값이 10이 아닐 경우에는 계속 반복합니다.
+
+            System.out.println("반복문 종료");
+        }
+    }
+```
