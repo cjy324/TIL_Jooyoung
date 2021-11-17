@@ -1,0 +1,12 @@
+- 저용량 단일파일 업로드 시 KUPLOAD서버 로직 디버깅 및 학습
+   - RAONKHandler 로직
+   - ParameterSetting 로직
+   - PrepareRequest 로직
+   - UploadRequest 로직
+   - EndRequest 로직
+   
+
+[JAVA 정리]
+https://www.notion.so/JAVA-5a6a5bdd5e2545efb0f44b02fd3f8354#2217e5a8b1ed4356a1287ad01a194884
+[서버 정리]
+https://www.notion.so/K-UPLOAD-SERVER-16eeb1d7a5ae4b51847eb4476c9c8e19
