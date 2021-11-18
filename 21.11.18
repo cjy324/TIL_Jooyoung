@@ -1,0 +1,10 @@
+금일 업무
+   [RAON_SOLUTION]
+     - 대용량 분할파일 업로드 시 KUPLOAD서버 로직 디버깅 및 학습
+       - PrepareRequest, UploadRequest, EndRequest 로직
+     - 다운로드 시 KUPLOAD서버 로직 디버깅 및 학습
+       - PrepareRequest 로직
+
+   [K-업로드 모바일]
+     - 파일 업로드 로직 디버깅 및 학습
+        - UploadTask 로직
