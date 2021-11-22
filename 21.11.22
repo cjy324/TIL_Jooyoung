@@ -1,0 +1,11 @@
+- K-Upload SERVER: 
+금일 업무
+   [RAON_SOLUTION]
+     - 단일파일 다운로드 시 KUPLOAD서버 로직 디버깅 및 학습
+       - PrepareRequest, DownloadRequest, EndRequest 로직
+
+   [K-업로드 모바일]
+     - 다운로드 로직 디버깅 및 학습
+       - Init, Down, Finish - DownloadRequest 로직
+       - DownloadTask 로직
+       - FileUtils 로직
