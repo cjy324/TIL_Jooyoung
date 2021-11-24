@@ -1,0 +1,14 @@
+금일 업무
+   [RAON_SOLUTION]
+     - 파일 다운로드 시 KUPLOAD서버 로직 디버깅 및 학습
+       - DownloadRequest 로직
+       - CommonUtils 로직
+         - sendFileToClient() 등
+
+   [K-업로드 모바일]
+     - 다운로드 로직 디버깅 및 학습
+       - DownloadRequest 로직
+       - DownloadTask 로직
+         - run(), sendDownloadNext(), OnDownloadResponseListener(), OnInitDownloadResponseListener() 등
+       - MainActivity 로직
+         - OnDownloadProgress()
