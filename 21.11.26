@@ -1,0 +1,12 @@
+[RAON_SOLUTION]
+ - 파일 업로드 시 KUPLOAD서버 로직 디버깅 및 학습
+   - PrepareUploadRequest 로직
+   - UploadRequest 로직
+
+[K-업로드 모바일]
+ - 업로드 로직 디버깅 및 학습
+   - InitUploadRequest 로직
+   - UploadRequest 로직
+   - UploadTask 로직
+     - run(), initializeFiles(), sendInitUpload(), OnInitUploadResponseListener(), OnUploadResponseListener() 등
+
