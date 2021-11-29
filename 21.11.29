@@ -1,0 +1,9 @@
+[RAON_SOLUTION]
+ - 파일 업로드 시 KUPLOAD서버 로직 디버깅 및 학습
+   - EndUploadRequest 로직
+
+[K-업로드 모바일]
+ - 업로드 로직 디버깅 및 학습
+   - FinishUploadRequest 로직
+   - UploadTask 로직
+     - OnFinishUploadResponseListener(), OnUploadResponseListener(), Cancel(), Pause() 등
