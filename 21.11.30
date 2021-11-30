@@ -1,0 +1,9 @@
+[K-Monitor]
+ - K-Monitor 설치 및 환경 셋팅
+ - MySQL 설치 및 환경 셋팅
+ - K-Monitor 로직 디버깅 및 학습
+
+[K-업로드 모바일]
+ - 업로드 로직 디버깅 및 학습
+   - KMonitorManager로직
+   - StartUploadMonitorRequest로직
