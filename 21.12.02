@@ -1,0 +1,5 @@
+[K-Monitor]
+ - K-Monitor 테스트를 위한 클라이언트 페이지 환경 설정
+ - 파일 업로드 시 K-Monitor 로직 디버깅 및 학습
+   - MonitorHandler.java 로직
+     - Process(), transferStart(), progressTransfer(), completeTransfer()
