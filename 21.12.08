@@ -1,0 +1,6 @@
+[K-Monitor]
+     - 파일 다운로드 시 K-Monitor 로직 디버깅 및 학습
+       - 통신별 Parameter, Header 분석
+       - MonitorHandler.java 로직
+         - Process(), transferStart(), progressTransfer(), completeTransfer()
+       - KMonitor 페이지 서버 로직 디버깅
