@@ -1,0 +1,7 @@
+[K-Monitor]
+   - 파일 다운로드 진행, 중단, 강제중단 시 K-Monitor 파일서버 로직 디버깅 및 학습
+     - 통신별 Parameter, Header 분석
+     - MonitorHandler.java 로직
+       - Process(), transferStart(), progressTransfer(), completeTransfer()
+     - ScheduleManager.java 로직
+       - setScheduler(), setSchedulerPeriodicCall(), setSchedulerOldTransfer()
