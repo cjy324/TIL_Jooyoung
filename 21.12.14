@@ -1,0 +1,4 @@
+[K-Monitor]
+ - DB연결 관련 로직 디버깅
+   - JDBC, DBCP 관련 학습
+ - ServerDao.java, TransferDao.java 로직 디버깅
