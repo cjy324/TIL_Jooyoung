@@ -1,0 +1,6 @@
+[K-Monitor]
+ - K-Monitor 파일서버
+   - 업로드, 다운로드 parameter 정리
+ - K-Monitor 페이지서버 로직 디버깅 및 학습
+   - ManagerRequest.java, MonitorRequest.java
+   - StatisticDao.java, FileDao.java, TransferDao.java 등 SQL 쿼리문 학습
