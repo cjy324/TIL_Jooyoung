@@ -1,0 +1,6 @@
+[K-Monitor]
+ - K-Monitor 페이지서버 로직 디버깅 및 학습
+   - StatisticDao.java, FileDao.java, TransferDao.java 등 SQL 쿼리문 학습
+[K-Monitor_Livepass]  
+ - KMonitor_Livepass 테이블 설계
+   - K_MONITOR_SESSIONS, K_MONITOR_GROUPS, K_MONITOR_SESSIONS_DIRECTORIES, K_MONITOR_GROUPS_DIRECTORIES 등
