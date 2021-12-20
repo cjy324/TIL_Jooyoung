@@ -1,0 +1,6 @@
+[K-Monitor_Livepass]  
+ - Seesion리스트 페이지 구현[진행중]
+   - session 리스팅 로직[ㅇ]
+   - session 검색기능 로직[]
+   - session 페이징 로직[]
+   - session 삭제 로직[]
