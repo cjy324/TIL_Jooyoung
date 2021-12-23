@@ -1,0 +1,4 @@
+[K-Monitor_Livepass]  
+ - Session 상세페이지 구현[ㅇ]
+ - Session 수정페이지 구현[ㅇ]
+ - Session 생성, 삭제 시 디렉토리별 권한 부여 로직 추가[]
