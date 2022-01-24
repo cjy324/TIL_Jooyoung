@@ -1,0 +1,6 @@
+< com.raonwiz.livepass.monitor 작업 >
+- c20: 서버 Default Path 체크[]
+  - Req: Livepass 서버 config에 지정되있는 Default Path값 전달
+  - Res: 
+    - 1. DB에 저장되있는 Default Path값이 이미 있는 경우 livepass 서버로 DB에 저장되있는 Default Path값을 리턴
+    - 2. DB에 저장되있는 Default Path값이 없는 경우 전달받은 Default Path값을 DB에 저장 후 Default Path값 리턴
