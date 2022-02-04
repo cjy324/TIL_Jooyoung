@@ -312,3 +312,5 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 [-22.01.28](https://github.com/cjy324/TIL_Jooyoung/blob/main/22.01.28)
 
 [-22.02.03](https://github.com/cjy324/TIL_Jooyoung/blob/main/22.02.03)
+
+[-22.02.04](https://github.com/cjy324/TIL_Jooyoung/blob/main/22.02.04)
