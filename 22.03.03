@@ -1,0 +1,6 @@
+[22.03.03]
+- 스케줄 연결종료시 호출 로직[ㅇ]
+- HttpWebReauester.java / execute 참고
+http://112.138.156:웹소켓/api/com/disconnect?flag="1"
+post전송[ㅇ]
+- 포트 2개 정보 표현 추가[ㅇ]
