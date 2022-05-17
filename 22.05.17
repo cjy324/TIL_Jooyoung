@@ -1,0 +1,13 @@
+klivepass 기능 추가
+
+[서버 상태 체크]
+0. 접근 URL (예: http://ip) : 텍스트박스
+   입력 받아서 DB 데이터 적용 (SERVERS Table)[ㅇ]
+1. 스케쥴에서 서버의 서버ID, 접근URL 리스팅 함
+  - 해당 서버의 temp 폴더 정상 존재 여부 체크
+     -> temp 폴더가 비정상인 경우 서버종료, 세션종료 등 DB 로직 수행
+2. 서버리스트 중 접근URL있는 서버에서만...
+   접근 URL 만들기 - http://112.136.138.143 + / + api/com/excute?k00=$a2MMYzE$y
+   접근 URL 호출(Timeout 1초 설정) 후 {"res":"S"} 응답받지 못하면
+   temp에서 해당 서버의 server.serverid 폴더/파일 제거
+   서버상태 DB 처리
