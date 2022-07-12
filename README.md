@@ -474,3 +474,5 @@ Today I Learned(namjunemy님의 TIL양식을 참고)
 [-22.06.09](https://github.com/cjy324/TIL_Jooyoung/blob/main/22.06.09)
 
 [-22.06.20](https://github.com/cjy324/TIL_Jooyoung/blob/main/22.06.20)
+
+[-22.07.12](https://github.com/cjy324/TIL_Jooyoung/blob/main/22.07.12)
